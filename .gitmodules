@@ -16,3 +16,9 @@
 [submodule "bundle/tcomment"]
 	path = bundle/tcomment
 	url = https://github.com/tomtom/tcomment_vim.git
+[submodule "bundle/vim-sparkup"]
+	path = bundle/vim-sparkup
+	url = https://github.com/bingaman/vim-sparkup.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim.git
