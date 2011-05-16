@@ -3,36 +3,39 @@
 
 set nocompatible
 
+" Call the pathogen plugin
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
-filetype off 
+
+" Enable filetype stuff
+filetype on
 filetype indent plugin on
 syntax on
 scriptencoding utf-8
-set history=1000  				" Store a ton of history (default is 20)
+set history=1000  				    " Store a ton of history (default is 20)
 
 " Vim UI {
-	set tabpagemax=15 			" only show 15 tabs
-	set showmode 				" display the current mode
-	set linespace=0 			" No extra spaces between rows
-	set nu 				    	" Line numbers on
-	set showmatch				" show matching brackets/parenthesis
-	set hlsearch				" highlight search terms
-	set ignorecase 				" case insensitive search
-	set wildmenu 				" show list instead of just completing
+	set tabpagemax=15 			    " only show 15 tabs
+	set showmode 				    " display the current mode
+	set linespace=0 			    " No extra spaces between rows
+	set nu 				    	    " Line numbers on
+	set showmatch				    " show matching brackets/parenthesis
+	set hlsearch				    " highlight search terms
+	set ignorecase 				    " case insensitive search
+	set wildmenu 				    " show list instead of just completing
 	set wildmode=list:longest,full 		" command <Tab> completion, list matches, then longest common part, then all.
-	set scrolljump=5 			" lines to scroll when cursor leaves screen
-	set scrolloff=3 			" minimum lines to keep above and below cursor
-	set foldenable 				" auto fold code
+	set scrolljump=5 			    " lines to scroll when cursor leaves screen
+	set scrolloff=3 			    " minimum lines to keep above and below cursor
+	set foldenable 				    " auto fold code
 "  }
 
 " Formatting {
-	set nowrap				    " wrap long lines
-	set shiftwidth=4			" use indents of 4 spaces
-	set expandtab				" tabs are spaces, not tabs
-	set tabstop=4				" an indentation every four columns
-	set softtabstop=4			" let backspace delete indent
-	set pastetoggle=<F12>		" pastetoggle (sane indentation on pastes)
+	set nowrap				        " wrap long lines
+	set shiftwidth=4			    " use indents of 4 spaces
+	set expandtab				    " tabs are spaces, not tabs
+	set tabstop=4				    " an indentation every four columns
+	set softtabstop=4			    " let backspace delete indent
+	set pastetoggle=<F12>		    " pastetoggle (sane indentation on pastes)
 	" Remove trailing whitespaces and ^M chars
 	autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 " }
