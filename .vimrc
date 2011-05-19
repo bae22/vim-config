@@ -10,11 +10,21 @@ call pathogen#runtime_append_all_bundles()
 " Enable filetype stuff
 filetype on
 filetype indent plugin on
-syntax on
+syntax enable
 scriptencoding utf-8
 set history=1000  				    " Store a ton of history (default is 20)
 
+" Check for GUI
+if has('gui_running')
+    set background=dark
+else
+    set background=dark
+endif
+
 " Vim UI {
+    set t_Co=16                     " Set the terminal colours to 16
+    let g:solarized_termcolors=16   " Set solarized to use 16 colours
+    colorscheme solarized           " Use the solarized colour scheme
 	set tabpagemax=15 			    " only show 15 tabs
 	set showmode 				    " display the current mode
 	set linespace=0 			    " No extra spaces between rows
