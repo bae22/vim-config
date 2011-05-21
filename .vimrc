@@ -37,6 +37,8 @@ endif
 	set scrolljump=5 			    " lines to scroll when cursor leaves screen
 	set scrolloff=3 			    " minimum lines to keep above and below cursor
 	set foldenable 				    " auto fold code
+    set laststatus=2                " force vim to always show the status line
+    set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P    " Show git branch in the status line
 "  }
 
 " Formatting {
