@@ -40,3 +40,12 @@
 [submodule "term-config/gnome-terminal-colors-solarized"]
 	path = term-config/gnome-terminal-colors-solarized
 	url = https://github.com/sigurdga/gnome-terminal-colors-solarized.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "linux-tagging/nodejs"]
+	path = linux-tagging/nodejs
+	url = https://github.com/joyent/node.git
+[submodule "linux-tagging/doctorjs"]
+	path = linux-tagging/doctorjs
+	url = https://github.com/mozilla/doctorjs.git
