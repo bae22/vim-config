@@ -12,6 +12,8 @@ filetype on
 filetype indent plugin on
 syntax enable
 scriptencoding utf-8
+set encoding=utf-8
+set fileencoding=utf-8
 set history=1000  				    " Store a ton of history (default is 20)
 
 " Check for GUI
@@ -38,8 +40,17 @@ endif
 	set scrolloff=3 			    " minimum lines to keep above and below cursor
 	set foldenable 				    " auto fold code
     set laststatus=2                " force vim to always show the status line
-    set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P    " Show git branch in the status line
 "  }
+
+" Status line {
+    set statusline=%<%f\                            " Show filename
+    set statusline+=%y\ \                           " Show filetype
+    set statusline+=%h%m%r                          " Help section
+    set statusline+=%{fugitive#statusline()}        " Show git branch
+    set statusline+=%=                              " Divide between left and right justification
+    set statusline+=%-14.(%l,%c%V%)\                " line number, column and column width
+    set statusline+=%P                              " Percentage through buffer
+" }
 
 " Formatting {
 	set nowrap				        " wrap long lines
