@@ -19,6 +19,12 @@ set history=1000  				    " Store a ton of history (default is 20)
 " Check for GUI
 if has('gui_running')
     set background=dark
+    set guioptions-=L               " Remove left scrollbar in splits
+    set guioptions-=R               " Remove right scrollbar in splits
+    set guioptions-=l               " Remove left scrollbar
+    set guioptions-=r               " Remove right scrollbar
+    set guioptions-=b               " Remove bottom scrollbar
+    set guioptions-=m               " Remove menu
 else
     set background=dark
 endif
