@@ -93,8 +93,11 @@ endif
 " Plugins {
 
 	" Supertab {
-		let g:SuperTabDefaultCompletionType = "context"
-		let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
+		let g:SuperTabDefaultCompletionType = "context"                                 " Context tab completion
+		"let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
+        let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
+        let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
+        let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-u>", "&omnifunc:<c-x><c-o>"]
 	" }
 	" easymotion {
 		let g:EasyMotion_leader_key = '<Leader>m' 		" change the leader to \m to avoid keymappings clashing with command-t plugin. 
