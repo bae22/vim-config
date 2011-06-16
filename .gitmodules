@@ -40,3 +40,6 @@
 [submodule "term-config/gnome-terminal-colors-solarized"]
 	path = term-config/gnome-terminal-colors-solarized
 	url = https://github.com/sigurdga/gnome-terminal-colors-solarized.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git

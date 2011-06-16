@@ -114,4 +114,9 @@ endif
 		let NERDTreeShowHidden=1
 		let NERDTreeKeepTreeInNewTab=1
 	" }
+    " Syntastic {
+        if has('signs')
+           let g:syntastic_enable_signs = 1
+        endif
+    " }
 " }
