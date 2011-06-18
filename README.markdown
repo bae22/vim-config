@@ -30,3 +30,9 @@ Install jshint
 Symlink the .jshintrc to the home dir
 
 ## Plugins ##
+
+### Command-t ###
+
+Requires ruby and ruby-dev
+Compile it with
+``rake make``
