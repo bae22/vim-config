@@ -69,6 +69,10 @@ endif
 	autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 " }
 
+" Filetype specific commands {
+    au BufRead,BufNewFile *.ascx set filetype=html      " Load ascx files as HTML
+" }
+
 " Key (re)Mappings {
 	" Easier moving in tabs and windows
 	map <C-J> <C-W>j<C-W>_
