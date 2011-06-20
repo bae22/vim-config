@@ -4,8 +4,8 @@
 set nocompatible
 
 " Call the pathogen plugin
-call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 " Enable filetype stuff
 filetype on
