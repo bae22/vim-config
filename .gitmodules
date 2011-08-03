@@ -28,9 +28,6 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = https://github.com/spf13/snipmate.vim.git
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
@@ -49,3 +46,6 @@
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = https://github.com/honza/snipmate-snippets.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/garbas/vim-snipmate.git
